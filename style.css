@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f7fb;
+  color: #222;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+/* Øverste menu */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  min-height: 90px;
+  padding: 0 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Logo + titel */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-box img {
+  height: 68px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-box h2 {
+  color: #F50D61;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.45);
+}
+
+/* Links i højre side */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.nav-links a:hover {
+  color: #F50D61;
+}
+
+/* Forside banner */
+.hero {
+  min-height: 50vh;
+  padding: 120px 8% 70px 8%;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 150, 40, 0.38) 0%,
+      rgba(40, 160, 80, 0.34) 12%,
+      rgba(40, 90, 190, 0.34) 24%,
+      rgba(130, 60, 170, 0.34) 36%,
+      rgba(255, 210, 70, 0.36) 48%,
+      rgba(238, 40, 90, 0.34) 58%,
+      rgba(0, 0, 0, 0.18) 68%,
+      rgba(120, 70, 40, 0.24) 76%,
+      rgba(255, 255, 255, 0.34) 84%,
+      rgba(245, 169, 184, 0.36) 92%,
+      rgba(91, 206, 250, 0.36) 100%
+    ),
+    linear-gradient(
+      135deg,
+      #fce7f3 0%,
+      #ede9fe 45%,
+      #dbeafe 100%
+    );
+
+  color: white;
+}
+
+.hero-content {
+  max-width: 950px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 900px;
+  color: white;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 550px;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: white;
+  color: #F50D61;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* About us */
+.about-section {
+  padding: 80px 8%;
+  background: white;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #F50D61;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.about-box {
+  background: #f5f7fb;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  border-left: 6px solid #F50D61;
+}
+
+.about-box h3 {
+  font-size: 26px;
+  color: #F50D61;
+  margin-bottom: 18px;
+}
+
+.about-box ul {
+  list-style: none;
+}
+
+.about-box li {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.about-box li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #F50D61;
+  font-weight: bold;
+}
+
+/* Billedkarrusel */
+.carousel-section {
+  padding: 70px 8%;
+  background: #f5f7fb;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: 36px;
+  color: #F50D61;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0);
+  background: white;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Pile-knapper */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.88);
+  color: #F50D61;
+
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.prev {
+  left: 18px;
+}
+
+.next {
+  right: 18px;
+}
+
+/* Kalender */
+.google-calendar-section {
+  padding: 70px 8%;
+  background: #f5f7fb;
+}
+
+.google-calendar-section h2 {
+  font-size: 36px;
+  color: #F50D61;
+  margin-bottom: 30px;
+}
+
+.calendar-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.calendar-wrapper iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Sociale medier */
+.social-section {
+  padding: 70px 8%;
+  background: white;
+  text-align: center;
+}
+
+.social-section h2 {
+  font-size: 36px;
+  color: #F50D61;
+  margin-bottom: 10px;
+}
+
+.social-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.social-card {
+  background: #f5f7fb;
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.social-card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.social-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Fælles cirkel-ikon */
+.circle-icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+  color: white;
+  font-size: 58px;
+  line-height: 1;
+}
+
+.circle-icon i {
+  color: white !important;
+  -webkit-text-fill-color: white;
+  background: none;
+  font-size: 58px;
+  transform: translateY(2px);
+}
+
+/* Regnbue baggrund */
+.rainbow-bg {
+  background: linear-gradient(
+    135deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+/* Mobil */
+@media (max-width: 800px) {
+  nav {
+    min-height: auto;
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .logo-box {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .logo-box img {
+    height: 52px;
+  }
+
+  .logo-box h2 {
+    font-size: 26px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .hero {
+    min-height: 85vh;
+    padding: 170px 5% 60px 5%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-button {
+    display: inline-block;
+  }
+
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h2,
+  .google-calendar-section h2,
+  .social-section h2,
+  .carousel-section h2 {
+    font-size: 32px;
+  }
+
+  .about-text p {
+    font-size: 17px;
+  }
+
+  .about-box {
+    padding: 25px;
+  }
+
+  .carousel-section {
+    padding: 60px 5%;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .google-calendar-section {
+    padding: 60px 5%;
+  }
+
+  .calendar-wrapper {
+    padding: 10px;
+  }
+
+  .calendar-wrapper iframe {
+    height: 450px;
+  }
+
+  .social-section {
+    padding: 60px 5%;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-card {
+    padding: 28px 18px;
+  }
+
+  .circle-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  .circle-icon i {
+    font-size: 48px;
+  }
+}

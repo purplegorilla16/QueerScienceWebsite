@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queer Science</title>
+  
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+    <link rel="shortcut icon" href="images/favicon.png?v=99" type="image/png">
+    <link rel="icon" href="images/favicon.png?v=99" type="image/png">
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="logo-box">
+        <img src="images/logo.png" alt="Queer Science logo">
+      </div>
+
+      <div class="nav-links">
+        <a href="#about">About us</a>
+        <a href="#kalender">Calendar</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>A social community for LGBTQIA+ SCIENCE students at the University of Copenhagen</h1>
+        <p>Meet new queer friends that also study SCIENCE.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About us</h2>
+
+          <p>
+            Queer Science is a community for LGBTQIA+ students at the Faculty of Science
+            at the University of Copenhagen.
+          </p>
+
+          <p>
+            Our goal is to create a welcoming space where queer students can meet,
+            support each other, share experiences, and take part in social and academic events.
+          </p>
+
+          <p>
+            Everyone who wants to help build an inclusive and respectful study environment
+            is welcome to join our community.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>What we do</h3>
+          <ul>
+            <li>Organize social events</li>
+            <li>Create community across study programmes</li>
+            <li>Share information and opportunities</li>
+            <li>Support LGBTQIA+ students at SCIENCE</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="google-calendar-section" id="kalender">
+      <h2>Future events</h2>
+
+      <div class="calendar-wrapper">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=queerscience.ucph%40gmail.com&ctz=Europe%2FCopenhagen"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+    </section>
+    
+    <section class="carousel-section">
+      <h2>Pictures of our community</h2>
+    
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    
+        <img
+          id="carousel-image"
+          src="images/grill.png"
+          alt="Pictures from Queer Science"
+        >
+    
+        <button class="carousel-btn next" onclick="changeSlide(1)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="social-section" id="contact">
+      <h2>Social media</h2>
+      <p>Be a part of our community!</p>
+
+      <div class="social-grid">
+
+        <a href="https://www.facebook.com/profile.php?id=61577011460060" class="social-card">
+          <div class="circle-icon rainbow-bg">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <h3>Facebook Page</h3>
+          <p>Follow our Facebook page</p>
+        </a>
+
+        <a href="https://www.facebook.com/groups/24231439149814155/" class="social-card">
+          <div class="circle-icon rainbow-bg">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <h3>Facebook Group</h3>
+          <p>Follow for events and information</p>
+        </a>
+
+        <a href="https://m.me/ch/Abanf4z44rzaXLcI/" class="social-card">
+          <div class="circle-icon rainbow-bg">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </div>
+          <h3>Messenger Group</h3>
+          <p>Chat with group members</p>
+        </a>
+
+        <a href="mailto:queerscience@srku.dk?subject=Contact%20Queer%20Science" class="social-card">
+          <div class="circle-icon rainbow-bg">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>Contact us by email</p>
+        </a>
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
