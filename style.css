@@ -231,7 +231,6 @@ nav {
   margin: 0 auto;
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0);
   background: white;
 }
 
@@ -398,7 +397,7 @@ nav {
     violet
   );
 }
-```css
+
 /* Mobil */
 @media (max-width: 800px) {
 
@@ -424,7 +423,6 @@ nav {
     margin: 0;
   }
 
-  /* Menuen gøres mere kompakt */
   .nav-links {
     display: flex;
     flex-wrap: nowrap;
@@ -438,10 +436,9 @@ nav {
     white-space: nowrap;
   }
 
-  /* Hero */
   .hero {
     min-height: 75vh;
-    padding: 135px 7% 50px 7%;
+    padding: 135px 7% 50px;
     text-align: center;
   }
 
@@ -465,11 +462,6 @@ nav {
     margin-right: auto;
   }
 
-  .hero-button {
-    display: inline-block;
-  }
-
-  /* About */
   .about-section {
     padding: 50px 7%;
   }
@@ -505,7 +497,6 @@ nav {
     line-height: 1.5;
   }
 
-  /* Carousel */
   .carousel-section {
     padding: 50px 5%;
   }
@@ -526,7 +517,6 @@ nav {
     font-size: 15px;
   }
 
-  /* Kalender */
   .google-calendar-section {
     padding: 50px 5%;
   }
@@ -540,7 +530,6 @@ nav {
     height: 430px;
   }
 
-  /* Sociale medier */
   .social-section {
     padding: 50px 7%;
   }
@@ -554,10 +543,11 @@ nav {
     padding: 20px 15px;
   }
 
-  /* Mindre ikoner */
   .circle-icon {
     width: 65px;
     height: 65px;
+    margin-bottom: 10px;
+    font-size: 30px;
   }
 
   .circle-icon i {
@@ -566,7 +556,7 @@ nav {
 
   .social-card h3 {
     font-size: 18px;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-bottom: 5px;
   }
 
@@ -575,7 +565,6 @@ nav {
     line-height: 1.4;
   }
 }
-
 
 /* Ekstra små telefoner */
 @media (max-width: 480px) {
