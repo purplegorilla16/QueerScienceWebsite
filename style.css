@@ -442,12 +442,10 @@ nav {
 /* =========================
    TABLET / MOBIL
 ========================= */
-/* =========================
-   MOBIL MENU
-========================= */
 
 @media (max-width: 800px) {
 
+  /* Menu: logo + 3 links på én vandret linje */
   nav {
     position: absolute;
     top: 0;
@@ -468,15 +466,16 @@ nav {
     gap: 0;
   }
 
-  /* Logo */
   .logo-box {
     height: 64px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     flex-shrink: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .logo-box img {
@@ -486,9 +485,9 @@ nav {
     height: 38px;
 
     margin: 0;
+    padding: 0;
   }
 
-  /* De tre links */
   .nav-links {
     height: 64px;
 
@@ -519,5 +518,249 @@ nav {
     line-height: 1;
 
     white-space: nowrap;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 65vh;
+    padding: 100px 7% 50px;
+
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.5;
+
+    max-width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  /* About */
+  .about-section {
+    padding: 50px 7%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-text h2,
+  .google-calendar-section h2,
+  .social-section h2,
+  .carousel-section h2 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-box {
+    padding: 22px;
+  }
+
+  .about-box h3 {
+    font-size: 20px;
+  }
+
+  .about-box li {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Kalender */
+  .google-calendar-section {
+    padding: 50px 5%;
+  }
+
+  .calendar-wrapper {
+    padding: 6px;
+  }
+
+  .calendar-wrapper iframe {
+    width: 100%;
+    height: 430px;
+  }
+
+  /* Carousel */
+  .carousel-section {
+    padding: 50px 5%;
+  }
+
+  .carousel {
+    height: 260px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  /* Sociale medier */
+  .social-section {
+    padding: 50px 7%;
+  }
+
+  .social-section > p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .social-card {
+    padding: 20px 15px;
+  }
+
+  .circle-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+  }
+
+  .circle-icon i {
+    font-size: 30px;
+  }
+
+  .social-card h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  .social-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+/* =========================
+   SMÅ MOBILER
+========================= */
+
+@media (max-width: 480px) {
+
+  nav {
+    height: 60px;
+    min-height: 60px;
+
+    padding: 0 10px;
+  }
+
+  .logo-box {
+    height: 60px;
+  }
+
+  .logo-box img {
+    height: 32px;
+  }
+
+  .nav-links {
+    height: 60px;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    height: 60px;
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 90px 6% 45px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .about-section {
+    padding: 45px 6%;
+  }
+
+  .about-text h2,
+  .google-calendar-section h2,
+  .social-section h2,
+  .carousel-section h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .carousel {
+    height: 220px;
+  }
+
+  .calendar-wrapper iframe {
+    height: 400px;
+  }
+
+  .circle-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .circle-icon i {
+    font-size: 26px;
+  }
+
+  .social-card {
+    padding: 18px 12px;
+  }
+
+  .social-card h3 {
+    font-size: 17px;
+  }
+
+  .social-card p {
+    font-size: 13px;
   }
 }
