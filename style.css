@@ -459,33 +459,35 @@ nav {
      HERO
      styr bredde her
   ========================= */
-
   .hero {
     min-height: 62vh;
 
-    /* HERO sideafstand */
     padding-left: 22px;
     padding-right: 22px;
-
     padding-top: 90px;
     padding-bottom: 48px;
 
-    justify-content: center;
-    text-align: center;
+    /* =========================
+     HERO
+     skift hvilken vej linjerne er placeret
+  ========================= */
+    justify-content: flex-start;
+    text-align: left; 
   }
 
   .hero-content {
-    /* HERO indholdsbredde */
     width: 94%;
     max-width: 520px;
 
-    margin: 0 auto;
+    margin: 0;
   }
 
   .hero h1 {
     font-size: 27px;
     line-height: 1.28;
     margin-bottom: 16px;
+
+    text-align: left;
   }
 
   .hero p {
@@ -495,7 +497,8 @@ nav {
     width: 90%;
     max-width: 420px;
 
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
   }
 
   /* =========================
