@@ -806,34 +806,62 @@ nav {
   }
 
   /* SOCIAL */
-  .social-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.social-section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
-  .social-grid {
-    /* sociale kort lidt smallere */
-    width: 94%;
-  }
+.social-grid {
+  display: grid;
 
-  .circle-icon {
-    width: 58px;
-    height: 58px;
-  }
+  /* 2 kolonner = 2 x 2 layout */
+  grid-template-columns: repeat(2, 1fr);
 
-  .circle-icon i {
-    font-size: 26px;
-  }
+  gap: 12px;
 
-  .social-card {
-    padding: 18px 12px;
-  }
+  width: 100%;
+  max-width: 420px;
 
-  .social-card h3 {
-    font-size: 17px;
-  }
+  margin: 0 auto;
+}
 
-  .social-card p {
-    font-size: 13px;
-  }
+.social-card {
+  padding: 16px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 170px;
+
+  text-align: center;
+}
+
+/* Ikoner */
+.circle-icon {
+  width: 54px;
+  height: 54px;
+
+  margin: 0 auto 10px;
+}
+
+.circle-icon i {
+  font-size: 24px;
+}
+
+.social-card h3 {
+  font-size: 15px;
+  line-height: 1.2;
+
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.social-card p {
+  font-size: 12px;
+  line-height: 1.35;
+
+  margin-bottom: 0;
+}
 }
