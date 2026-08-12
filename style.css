@@ -426,7 +426,7 @@ nav {
   }
 
   .logo-box img {
-    height: 36px;
+    height: 40px;
     width: auto;
   }
 
@@ -523,19 +523,19 @@ nav {
   .about-text {
     /* ABOUT tekstbredde */
     width: 100%;
-    max-width: 680px;
+    max-width: 690px;
 
     margin: 0 auto;
   }
-
+ 
   .about-text h2 {
-    font-size: 28px;
+    font-size: 50px;
     line-height: 1.2;
     margin-bottom: 18px;
   }
 
   .about-text p {
-    font-size: 16px;
+    font-size: 50px;
     line-height: 1.65;
     margin-bottom: 18px;
   }
