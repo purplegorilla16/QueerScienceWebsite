@@ -608,7 +608,7 @@ nav {
 
   .carousel {
     /* CAROUSEL billedbredde */
-    width: 96%;
+    width: 100%;
     max-width: 650px;
 
     height: 260px;
