@@ -63,10 +63,9 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #F50D61;
   font-weight: bold;
   font-size: 20px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
   transition: color 0.2s ease;
 }
 
@@ -450,7 +449,7 @@ nav {
 
     height: 64px;
 
-    font-size: 13px;
+    font-size: 30px;
     line-height: 1;
     white-space: nowrap;
   }
@@ -483,7 +482,7 @@ nav {
   }
 
   .hero h1 {
-    font-size: 27px;
+    font-size: 30px;
     line-height: 1.28;
     margin-bottom: 16px;
 
@@ -491,7 +490,7 @@ nav {
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
 
     width: 90%;
@@ -725,7 +724,7 @@ nav {
   .nav-links a {
     height: 58px;
 
-    font-size: 11px;
+    font-size: 15px;
     white-space: nowrap;
   }
 
@@ -840,8 +839,8 @@ nav {
 
 /* Ikoner */
 .circle-icon {
-  width: 54px;
-  height: 54px;
+  width: 70px;
+  height: 70px;
 
   margin: 0 auto 10px;
 }
