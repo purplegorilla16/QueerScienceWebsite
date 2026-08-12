@@ -172,6 +172,10 @@ nav {
   align-items: center;
 }
 
+.about-text {
+  width: 100%;
+}
+
 .about-text h2 {
   font-size: 36px;
   color: #F50D61;
@@ -186,6 +190,7 @@ nav {
 }
 
 .about-box {
+  width: 100%;
   background: #f5f7fb;
   padding: 35px;
 
@@ -445,12 +450,12 @@ nav {
 
 @media (max-width: 800px) {
 
-  /* Menu: logo + 3 links på én vandret linje */
-  nav {
-    position: absolute;
-    top: 0;
-    left: 0;
+  /* -------------------------
+     MENU
+     Logo + links på én linje
+  ------------------------- */
 
+  nav {
     width: 100%;
     height: 64px;
     min-height: 64px;
@@ -463,7 +468,7 @@ nav {
     justify-content: space-between;
 
     flex-wrap: nowrap;
-    gap: 0;
+    gap: 12px;
   }
 
   .logo-box {
@@ -473,16 +478,17 @@ nav {
     align-items: center;
     justify-content: flex-start;
 
-    flex-shrink: 0;
+    flex: 0 0 auto;
+
     margin: 0;
     padding: 0;
   }
 
   .logo-box img {
-    display: block;
-
     width: auto;
-    height: 38px;
+    height: 36px;
+
+    display: block;
 
     margin: 0;
     padding: 0;
@@ -496,9 +502,10 @@ nav {
     align-items: center;
     justify-content: flex-end;
 
+    flex: 1 1 auto;
     flex-wrap: nowrap;
 
-    gap: 16px;
+    gap: 14px;
 
     margin: 0;
     padding: 0;
@@ -516,14 +523,16 @@ nav {
 
     font-size: 13px;
     line-height: 1;
-
     white-space: nowrap;
   }
 
-  /* Hero */
+  /* -------------------------
+     HERO
+  ------------------------- */
+
   .hero {
     min-height: 65vh;
-    padding: 100px 7% 50px;
+    padding: 95px 24px 50px;
 
     text-align: center;
     justify-content: center;
@@ -531,38 +540,103 @@ nav {
 
   .hero-content {
     width: 100%;
-    max-width: 500px;
+    max-width: 560px;
+
     margin: 0 auto;
   }
 
   .hero h1 {
     font-size: 28px;
-    line-height: 1.25;
-    margin-bottom: 16px;
+    line-height: 1.28;
+
+    max-width: 100%;
+
+    margin: 0 auto 16px;
   }
 
   .hero p {
     font-size: 16px;
     line-height: 1.5;
 
-    max-width: 400px;
+    max-width: 420px;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
-  /* About */
+  /* -------------------------
+     ABOUT
+  ------------------------- */
+
   .about-section {
-    padding: 50px 7%;
+    padding: 48px 24px;
   }
 
   .about-content {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
     gap: 28px;
+    align-items: start;
   }
 
-  .about-text h2,
+  .about-text {
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+  }
+
+  .about-text p {
+    width: 100%;
+    max-width: none;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    margin-bottom: 18px;
+  }
+
+  .about-box {
+    width: 100%;
+
+    padding: 24px 22px;
+
+    border-radius: 18px;
+    border-left-width: 5px;
+  }
+
+  .about-box h3 {
+    font-size: 21px;
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+  }
+
+  .about-box ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-box li {
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+
+  /* Fælles overskrifter */
   .google-calendar-section h2,
   .social-section h2,
   .carousel-section h2 {
@@ -570,27 +644,12 @@ nav {
     line-height: 1.2;
   }
 
-  .about-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  /* -------------------------
+     KALENDER
+  ------------------------- */
 
-  .about-box {
-    padding: 22px;
-  }
-
-  .about-box h3 {
-    font-size: 20px;
-  }
-
-  .about-box li {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /* Kalender */
   .google-calendar-section {
-    padding: 50px 5%;
+    padding: 50px 24px;
   }
 
   .calendar-wrapper {
@@ -602,9 +661,12 @@ nav {
     height: 430px;
   }
 
-  /* Carousel */
+  /* -------------------------
+     CAROUSEL
+  ------------------------- */
+
   .carousel-section {
-    padding: 50px 5%;
+    padding: 50px 24px;
   }
 
   .carousel {
@@ -620,6 +682,7 @@ nav {
   .carousel-btn {
     width: 38px;
     height: 38px;
+
     font-size: 15px;
   }
 
@@ -631,9 +694,12 @@ nav {
     right: 10px;
   }
 
-  /* Sociale medier */
+  /* -------------------------
+     SOCIALE MEDIER
+  ------------------------- */
+
   .social-section {
-    padding: 50px 7%;
+    padding: 50px 24px;
   }
 
   .social-section > p {
@@ -644,6 +710,9 @@ nav {
   .social-grid {
     grid-template-columns: 1fr;
     gap: 14px;
+
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .social-card {
@@ -665,6 +734,7 @@ nav {
 
   .social-card h3 {
     font-size: 18px;
+
     margin-top: 8px;
     margin-bottom: 5px;
   }
@@ -681,68 +751,107 @@ nav {
 
 @media (max-width: 480px) {
 
+  /* Menu */
   nav {
-    height: 60px;
-    min-height: 60px;
+    height: 58px;
+    min-height: 58px;
 
     padding: 0 10px;
+    gap: 8px;
   }
 
   .logo-box {
-    height: 60px;
+    height: 58px;
   }
 
   .logo-box img {
-    height: 32px;
+    height: 31px;
   }
 
   .nav-links {
-    height: 60px;
-    gap: 10px;
+    height: 58px;
+    gap: 9px;
   }
 
   .nav-links a {
-    height: 60px;
+    height: 58px;
+
     font-size: 11px;
+    letter-spacing: -0.1px;
   }
 
+  /* Hero */
   .hero {
     min-height: 60vh;
-    padding: 90px 6% 45px;
+    padding: 85px 20px 45px;
   }
 
   .hero h1 {
     font-size: 24px;
-    line-height: 1.25;
+    line-height: 1.28;
   }
 
   .hero p {
     font-size: 15px;
+    line-height: 1.5;
   }
 
+  /* About */
   .about-section {
-    padding: 45px 6%;
+    padding: 42px 24px;
   }
 
-  .about-text h2,
+  .about-content {
+    width: 100%;
+    max-width: none;
+
+    gap: 24px;
+  }
+
+  .about-text h2 {
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+  }
+
+  .about-box {
+    padding: 21px 19px;
+    border-radius: 16px;
+  }
+
+  .about-box h3 {
+    font-size: 20px;
+  }
+
+  .about-box li {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Andre overskrifter */
   .google-calendar-section h2,
   .social-section h2,
   .carousel-section h2 {
     font-size: 24px;
   }
 
-  .about-text p {
-    font-size: 15px;
-  }
-
+  /* Carousel */
   .carousel {
     height: 220px;
   }
 
+  /* Kalender */
   .calendar-wrapper iframe {
     height: 400px;
   }
 
+  /* Sociale ikoner */
   .circle-icon {
     width: 58px;
     height: 58px;
