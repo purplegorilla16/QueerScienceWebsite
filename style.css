@@ -19,7 +19,10 @@ iframe {
   max-width: 100%;
 }
 
-/* Øverste menu */
+/* =========================
+   ØVERSTE MENU
+========================= */
+
 nav {
   position: absolute;
   top: 0;
@@ -38,7 +41,7 @@ nav {
   box-shadow: none;
 }
 
-/* Logo + titel */
+/* Logo */
 .logo-box {
   display: flex;
   align-items: center;
@@ -52,16 +55,7 @@ nav {
   display: block;
 }
 
-.logo-box h2 {
-  color: #F50D61;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0.3px;
-  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.45);
-}
-
-/* Links i højre side */
+/* Menu-links */
 .nav-links {
   display: flex;
   align-items: center;
@@ -74,16 +68,21 @@ nav {
   font-weight: bold;
   font-size: 20px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
   color: #F50D61;
 }
 
-/* Forside banner */
+/* =========================
+   HERO / FORSIDE
+========================= */
+
 .hero {
   min-height: 50vh;
   padding: 120px 8% 70px 8%;
+
   display: flex;
   align-items: center;
 
@@ -121,14 +120,17 @@ nav {
   line-height: 1.15;
   margin-bottom: 20px;
   max-width: 900px;
+
   color: white;
   text-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
 }
 
 .hero p {
   font-size: 20px;
+  line-height: 1.5;
   margin-bottom: 30px;
   max-width: 550px;
+
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
@@ -136,12 +138,15 @@ nav {
 .hero-button {
   display: inline-block;
   padding: 14px 28px;
+
   border-radius: 999px;
   background: white;
   color: #F50D61;
+
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -151,7 +156,10 @@ nav {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
 }
 
-/* About us */
+/* =========================
+   ABOUT US
+========================= */
+
 .about-section {
   padding: 80px 8%;
   background: white;
@@ -180,9 +188,11 @@ nav {
 .about-box {
   background: #f5f7fb;
   padding: 35px;
+
   border-radius: 22px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
   border-left: 6px solid #F50D61;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
 }
 
 .about-box h3 {
@@ -199,6 +209,7 @@ nav {
   font-size: 17px;
   color: #444;
   margin-bottom: 14px;
+
   position: relative;
   padding-left: 28px;
 }
@@ -207,11 +218,48 @@ nav {
   content: "✦";
   position: absolute;
   left: 0;
+
   color: #F50D61;
   font-weight: bold;
 }
 
-/* Billedkarrusel */
+/* =========================
+   KALENDER
+========================= */
+
+.google-calendar-section {
+  padding: 70px 8%;
+  background: #f5f7fb;
+}
+
+.google-calendar-section h2 {
+  font-size: 36px;
+  color: #F50D61;
+  margin-bottom: 30px;
+}
+
+.calendar-wrapper {
+  background: white;
+  padding: 20px;
+
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  overflow: hidden;
+}
+
+.calendar-wrapper iframe {
+  width: 100%;
+  height: 650px;
+
+  border: none;
+  border-radius: 12px;
+}
+
+/* =========================
+   BILLEDKARRUSEL
+========================= */
+
 .carousel-section {
   padding: 70px 8%;
   background: #f5f7fb;
@@ -226,22 +274,26 @@ nav {
 
 .carousel {
   position: relative;
+
   max-width: 900px;
   height: 500px;
   margin: 0 auto;
+
   border-radius: 22px;
   overflow: hidden;
+
   background: white;
 }
 
 .carousel img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   display: block;
 }
 
-/* Pile-knapper */
+/* Pile */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -249,6 +301,7 @@ nav {
 
   width: 52px;
   height: 52px;
+
   border: none;
   border-radius: 50%;
 
@@ -263,7 +316,9 @@ nav {
   align-items: center;
   justify-content: center;
 
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .carousel-btn:hover {
@@ -279,34 +334,10 @@ nav {
   right: 18px;
 }
 
-/* Kalender */
-.google-calendar-section {
-  padding: 70px 8%;
-  background: #f5f7fb;
-}
+/* =========================
+   SOCIALE MEDIER
+========================= */
 
-.google-calendar-section h2 {
-  font-size: 36px;
-  color: #F50D61;
-  margin-bottom: 30px;
-}
-
-.calendar-wrapper {
-  background: white;
-  padding: 20px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  overflow: hidden;
-}
-
-.calendar-wrapper iframe {
-  width: 100%;
-  height: 650px;
-  border: none;
-  border-radius: 12px;
-}
-
-/* Sociale medier */
 .social-section {
   padding: 70px 8%;
   background: white;
@@ -319,7 +350,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.social-section p {
+.social-section > p {
   font-size: 18px;
   color: #555;
   margin-bottom: 35px;
@@ -333,12 +364,18 @@ nav {
 
 .social-card {
   background: #f5f7fb;
+
   padding: 30px 20px;
   border-radius: 18px;
+
   text-decoration: none;
   color: #222;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .social-card:hover {
@@ -358,17 +395,19 @@ nav {
   margin-bottom: 0;
 }
 
-/* Fælles cirkel-ikon */
+/* Cirkel-ikon */
 .circle-icon {
   width: 110px;
   height: 110px;
-  margin: 0 auto 20px auto;
+
+  margin: 0 auto 20px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
+
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 
   color: white;
@@ -379,12 +418,14 @@ nav {
 .circle-icon i {
   color: white !important;
   -webkit-text-fill-color: white;
+
   background: none;
   font-size: 58px;
+
   transform: translateY(2px);
 }
 
-/* Regnbue baggrund */
+/* Regnbue */
 .rainbow-bg {
   background: linear-gradient(
     135deg,
@@ -398,70 +439,88 @@ nav {
   );
 }
 
-/* Mobil */
+/* =========================
+   TABLET / MOBIL
+========================= */
+
 @media (max-width: 800px) {
 
+  /* Menu - logo og links på samme linje */
   nav {
-    min-height: auto;
-    padding: 12px 5%;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+    min-height: 70px;
+    padding: 10px 4%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
   }
 
   .logo-box {
-    justify-content: center;
-    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-shrink: 0;
   }
 
   .logo-box img {
-    height: 46px;
-  }
-
-  .logo-box h2 {
-    font-size: 22px;
-    margin: 0;
+    height: 45px;
+    width: auto;
   }
 
   .nav-links {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 14px;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 18px;
-    width: auto;
   }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 13px;
     white-space: nowrap;
   }
 
+  /* Hero */
   .hero {
-    min-height: 75vh;
-    padding: 135px 7% 50px;
+    min-height: 65vh;
+    padding: 110px 7% 50px;
+
     text-align: center;
+    justify-content: center;
   }
 
   .hero-content {
     width: 100%;
     max-width: 500px;
+
     margin: 0 auto;
   }
 
   .hero h1 {
     font-size: 28px;
     line-height: 1.25;
+
     margin-bottom: 16px;
   }
 
   .hero p {
     font-size: 16px;
     line-height: 1.5;
+
     max-width: 400px;
+
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
   }
 
+  /* About */
   .about-section {
     padding: 50px 7%;
   }
@@ -497,26 +556,7 @@ nav {
     line-height: 1.5;
   }
 
-  .carousel-section {
-    padding: 50px 5%;
-  }
-
-  .carousel {
-    height: 260px;
-  }
-
-  #carousel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carousel-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 15px;
-  }
-
+  /* Kalender */
   .google-calendar-section {
     padding: 50px 5%;
   }
@@ -530,8 +570,44 @@ nav {
     height: 430px;
   }
 
+  /* Carousel */
+  .carousel-section {
+    padding: 50px 5%;
+  }
+
+  .carousel {
+    height: 260px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+
+    font-size: 15px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  /* Sociale medier */
   .social-section {
     padding: 50px 7%;
+  }
+
+  .social-section > p {
+    font-size: 15px;
+    margin-bottom: 25px;
   }
 
   .social-grid {
@@ -546,7 +622,9 @@ nav {
   .circle-icon {
     width: 65px;
     height: 65px;
+
     margin-bottom: 10px;
+
     font-size: 30px;
   }
 
@@ -556,6 +634,7 @@ nav {
 
   .social-card h3 {
     font-size: 18px;
+
     margin-top: 8px;
     margin-bottom: 5px;
   }
@@ -566,32 +645,46 @@ nav {
   }
 }
 
-/* Ekstra små telefoner */
+/* =========================
+   SMÅ MOBILER
+========================= */
+
 @media (max-width: 480px) {
 
   nav {
-    padding: 10px 4%;
+    min-height: 60px;
+    padding: 8px 3%;
+    gap: 6px;
+  }
+
+  .logo-box img {
+    height: 38px;
   }
 
   .nav-links {
-    gap: 12px;
+    gap: 9px;
   }
 
   .nav-links a {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .hero {
-    padding-top: 120px;
-    min-height: 70vh;
+    min-height: 60vh;
+    padding: 95px 6% 45px;
   }
 
   .hero h1 {
     font-size: 24px;
+    line-height: 1.25;
   }
 
   .hero p {
     font-size: 15px;
+  }
+
+  .about-section {
+    padding: 45px 6%;
   }
 
   .about-text h2,
@@ -601,8 +694,16 @@ nav {
     font-size: 24px;
   }
 
+  .about-text p {
+    font-size: 15px;
+  }
+
   .carousel {
     height: 220px;
+  }
+
+  .calendar-wrapper iframe {
+    height: 400px;
   }
 
   .circle-icon {
@@ -612,5 +713,17 @@ nav {
 
   .circle-icon i {
     font-size: 26px;
+  }
+
+  .social-card {
+    padding: 18px 12px;
+  }
+
+  .social-card h3 {
+    font-size: 17px;
+  }
+
+  .social-card p {
+    font-size: 13px;
   }
 }
